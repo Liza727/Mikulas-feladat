@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Űrlapok használata" />
+    <meta name="keywords" content="űrlap" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simon Elizabeth</title>
+  </head>
+  <body>
+    <main>
+      <header>Mikulás házhoz megy!</header>
+      <nav>
+        <ul>
+          <li><a href="index.html">A Mikulásról</a></li>
+          <li><a href="megrendelo.html">Megrendelő</a></li>
+          <li><a href="https://www.google.com/"target="_blank">Külső link</a></li>
+        </ul>
+      </nav>
+      <article>
+        Válaszd ki melyik szolgáltatást kéred!
+        <div class="container">
+          <h2>Amit a Mikulásnak tudnia kell</h2>
+          <form action="/action_page.php" method="post">
+            <label for="mnev"><a class="felkover">Megrendelő neve</a><a class="piros">*</a> </label>
+            <br />
+            <input type="text" id="mnev" name="mnev" /><br />
+            <br />
+            <label for="cnev"><a class="felkover">Cég név </a><a class="piros">*</a></label
+            ><br />
+            <input type="text" id="cnev" name="cnev" /><br />
+            <br />
+            <label for="mail"><a class="felkover">E-mail cím  </a><a class="piros">*</a></label
+            ><br />
+            <input type="text" id="mail" name="mail" /><br />
+            <br />
+            <label for="szcim"><a class="felkover">Számlázási név, cím  </a><a class="piros">*</a> </label>
+            <br />
+            <input type="info" id="szcim" name="szcim" /><br />
+            <br />
+            <label for="lcim"><a class="felkover">Látogatási cím  </a><a class="piros">*</a> </label
+            ><br />
+            <input type="info" id="lcim" name="lcim" /><br />
+            <br />
+            <label for="letszam"><a class="felkover">Létszám  </a><a class="piros">*</a> </label
+            ><br />
+            <input type="text" id="letszam" name="letszam" /><br />
+            <br />
+            <label for="ftudni"><a class="felkover">Fontosabb tudnivalók</a></label><br />
+            <input type="info" id="ftudni" name="ftudni" /><br />
+            <br />
+            <label for="keres"><a class="felkover">Kérés, bármilyen megjegyzés</a></label><br />
+            <input type="info" id="keres" name="keres" /><br />
+            <br />
+            <label for="ido"><a class="felkover">Időpont</a></label><br />
+            <input type="text" id="ido" name="ido" /><br />
+            <br />
+            <label for="time"><a class="felkover">Óra</a></label><br />
+            <select id="time" name="HH">
+              <option value="00">00</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <select id="time" name="MM">
+              <option value="00">00</option>
+              <option value="15">15</option>
+              <option value="30">30</option>
+              <option value="45">45</option>
+            </select>
+            <select id="time" name="AMPM">
+              <option value="AM">AM</option>
+              <option value="PM">PM</option></select
+            ><br />
+            <br />
+            <label for="elfog"><a class="felkover">Elfogadás  </a><a class="piros">*</a></label
+            ><br />
+            A felhasználási feltételeket, az adatvédelmi szabályokat megismerte
+            és elfogadom.<br />
+            <div class="valaszt">
+              <input type="checkbox" id="elfog" name="nem" value="elfog" />
+              <label for="elfog">Elfogadom</label><br />
+              <br />
+            </div>
+            <label for="szolg"><a class="felkover">Melyik szolgáltatás választod?  </a><a class="piros">*</a></label
+            ><br />
+            <div class="valaszt">
+              <input
+                type="checkbox"
+                id="cm"
+                name="fav_language"
+                value="Céges Mikulás"
+              />
+              <label for="cm">Céges Mikulás</label><br />
+              <input
+                type="checkbox"
+                id="dm"
+                name="fav_language"
+                value="Dolgozó Mikulás"
+              />
+              <label for="dm">Dolgozó Mikulás</label><br />
+              <input
+                type="checkbox"
+                id="fm"
+                name="fav_language"
+                value="Futár Mikulás"
+              />
+              <label for="fm">Futár Mikulás</label><br />
+              <input
+                type="checkbox"
+                id="rm"
+                name="fav_language"
+                value="Reklám Mikulás"
+              />
+              <label for="rm">Reklám Mikulás</label><br />
+              <input
+                type="checkbox"
+                id="kkf"
+                name="fav_language"
+                value="Kérem a kézműves foglalkozást is!"
+              />
+              <label for="kkf">Kérem a kézműves foglalkozást is!</label><br />
+              <input
+                type="checkbox"
+                id="csk"
+                name="fav_language"
+                value="Csomagolást is kérünk"
+              />
+              <label for="csk">Csomagolást is kérünk</label><br />
+              <br />
+              <br />
+            </div>
+          </form>
+        </div>
+      </article>
+      <footer>© Minden jog fenntartva!</footer>
+    </main>
+  </body>
+</html>
